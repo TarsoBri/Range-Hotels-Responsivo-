@@ -11,7 +11,7 @@ h1, h2, h3 {
     background-color: rgb(3, 179, 179);
     text-decoration: none;
     font-size: 1.5em;
-    padding: 0.5em 2.5em;
+    padding: 0.7em 2.5em;
     color: white;
     border-radius: 10px;
     display: inline-block;
@@ -59,17 +59,83 @@ h1, h2, h3 {
 .top-content{
     background-color: #f5f5f5f6;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
 }
 
 .top-content-title{
     color: #531b66;
     font-size: 1.5em;
-    margin: 1.5em;
+    margin-bottom: 1.25em;
 }
 
 .top-content-subtitle{
     font-size: 1em;
     color: #9c77a8;
     line-height: 1.75;
+}
+
+.mid-content{
+    text-align: center;
+    margin: 3em;
+}
+
+.mid-content-title{
+    color: #531b66;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.mid-content p{
+    line-height: 1.75;
+}
+
+.mid-content span[class^=icon]{
+    font-size: 3.5em;
+    color: #531b66;
+}
+
+
+.main-content{
+    padding: 2em;
+}
+
+.main-content-article{
+    margin-bottom: 3.5em;
+}
+
+.main-content-title{
+    color: #531b66;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: normal;
+}
+
+
+footer{
+    background-color: #212f3f;
+    color: rgba(206, 205, 205, 0.753);
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+.footer-menushare{
+    background-color: #304155;
+}
+
+.footer-menushare li{
+    list-style: none;
+    display: inline-block;
+    padding: 1.25em;
+}
+
+.footer-menushare a[class^=icon]{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.footer-menushare a[class^=icon]:hover{
+    color: #a2c2e5;
+    transition: all .3s;
 }
