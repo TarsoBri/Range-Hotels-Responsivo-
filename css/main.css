@@ -3,8 +3,32 @@ html{
     font-family: sans-serif;
 }
 
+
 h1, h2, h3 {
     font-family: "Oxygen", Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after, .row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.icon-play{
+    height: 5em;
+    display: none;
+}
+
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: block;
 }
 
 .button{
@@ -34,6 +58,7 @@ h1, h2, h3 {
 
 .top-nav{
     background-color: #6d2b83;
+    
 }
 
 .top-nav ul{
@@ -138,4 +163,109 @@ footer{
 .footer-menushare a[class^=icon]:hover{
     color: #a2c2e5;
     transition: all .3s;
+}
+
+@media screen and (min-width: 48.75em){
+
+    .icon-play{
+        height: 5em;
+        display: block;
+    }
+
+    .top-header-img{
+        float: left;
+    }
+
+    .top-nav{
+        background-color: transparent;
+        float: right;
+        margin-top: 1.3em;
+    }
+
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-nav li{
+        display: inline-block;
+    }
+
+    .top-nav a{
+        color: #531b66;
+    }
+    
+    .top-nav a:hover{
+        background-color: #c291d3;
+    }
+
+    .top-content{
+        background-color: #531b66;
+    }
+    .top-content-title, .top-content-subtitle{
+        color: white;
+    }
+
+
+
+
+    .col-1-4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-article .button{
+        float: right;
+    }
+}
+
+
+@media screen and (min-width: 62em){
+    .top-content{
+        background:  url(../images/bg_topo_1198x670.jpg) no-repeat;
+
+        height: 15em;
+        padding: 10em;
+        background-size: cover;  
+    }
+}
+
+
+@media screen and (min-width: 82em){
+
+    .icon-play{
+        height: 8em;
+        display: block;
+    }
+
+    .top-content{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        padding: 20em 25em;
+        background-position: top;
+        background-size: cover;
+    }
+    
+    .mid-content{
+        background-color: #e6e6e6;
+        background-size: cover;
+        margin: 0;
+    }
+
+    .col-1-4{
+        width: 21%;
+        margin: 2%;
+    }
+
+
+    .main-content-article{
+        width: 46%;
+        margin: 2%;
+        float: left;
+        
+    }
+
+    .main-content-article .button{
+        float: none;
+    }
 }
