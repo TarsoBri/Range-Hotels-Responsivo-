@@ -165,6 +165,17 @@ footer{
     transition: all .3s;
 }
 
+
+.fumaça{
+    background-image: radial-gradient(closest-corner at 50% 30%, black, transparent);   
+    background-size: cover;
+    background-position: center -40px;
+    background-repeat: no-repeat;
+
+    padding-bottom: 80px;
+    width: 100%;
+}
+
 @media screen and (min-width: 48.75em){
 
     .icon-play{
